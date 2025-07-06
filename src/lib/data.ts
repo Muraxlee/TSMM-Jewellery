@@ -113,20 +113,62 @@ export const products: Product[] = [
 export const testimonials: Testimonial[] = [
     {
         id: '1',
-        name: 'Eleanor Vance',
-        quote: 'The ring I purchased from Aurum is breathtaking. The craftsmanship is exquisite, and it truly feels like a piece of art. The customer service was just as exceptional.',
+        name: 'Sathi',
+        quote: 'Beautiful collection of silver jewellery and unique rings and chains.',
         avatar: 'https://placehold.co/100x100'
     },
     {
         id: '2',
-        name: 'James Peterson',
-        quote: 'I bought a necklace for my wife\'s anniversary, and she was overjoyed. The quality and design are unparalleled. Aurum has become my go-to for special gifts.',
+        name: 'Sharmila Devi',
+        quote: 'Designs very nice, best quality, very well, best experience.',
         avatar: 'https://placehold.co/100x100'
     },
     {
         id: '3',
-        name: 'Sophia Loren',
-        quote: 'Shopping at Aurum was a delightful experience. Their collection is curated with such elegance and taste. The earrings I chose are my new favorites!',
+        name: 'AISHWARYA',
+        quote: 'Excellent collection and quality of silver is very good.',
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '4',
+        name: 'User',
+        quote: 'Nice collection and Excellent Supervisor.',
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '5',
+        name: 'Sajitha',
+        quote: "It's very nice. The design was very unique and lovable quality.",
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '6',
+        name: 'Raghavan',
+        quote: 'Correct price and good customer service.',
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '7',
+        name: 'Vinod',
+        quote: 'Exclusive showroom for silver from Head to Toe. Purity silver and elegant designs are their trademark. Customer-friendly staff and professional management.',
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '8',
+        name: 'Vijaya Sridhar',
+        quote: 'Huge range of silver items. Their jewellery section is the best. New trendy jewelry. All the best TSMM team.',
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '9',
+        name: 'Jamela',
+        quote: 'Collections are really beautiful and trendy. Quality of silver is extremely good and staff very friendly. Shopping at TSMM is a pleasant experience.',
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '10',
+        name: 'RAJKUMAR MOHAN',
+        quote: 'Customer service was remarkable. Wide range of traditional collections available. Highly recommend.',
         avatar: 'https://placehold.co/100x100'
     }
 ];
