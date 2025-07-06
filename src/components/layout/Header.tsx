@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Gem, User as UserIcon, LogOut } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X, User as UserIcon, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import CartIcon from '@/components/cart/CartIcon';
 import { cn } from '@/lib/utils';
@@ -32,9 +33,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <Gem className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-xl">TSMM jeweller</span>
+        <Link href="/" className="flex items-center">
+          <Image src="/logo.jpg" alt="TSMM jeweller Logo" width={130} height={40} className="object-contain" />
         </Link>
         
         <nav className="hidden md:flex gap-6">

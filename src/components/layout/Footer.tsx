@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Gem, Twitter, Facebook, Instagram } from 'lucide-react';
+import Image from 'next/image';
+import { Twitter, Facebook, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -8,9 +9,8 @@ const Footer = () => {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex flex-col items-start gap-4">
-            <Link href="/" className="flex items-center gap-2">
-              <Gem className="h-6 w-6 text-primary" />
-              <span className="font-bold font-headline text-xl">TSMM jeweller</span>
+            <Link href="/" className="flex items-center">
+              <Image src="/logo.jpg" alt="TSMM jeweller Logo" width={130} height={40} className="object-contain" />
             </Link>
             <p className="text-sm text-muted-foreground">Exquisite jewelry for every occasion.</p>
           </div>
