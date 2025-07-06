@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -84,10 +84,6 @@ const ContactPage = () => {
                     <div className="flex items-start gap-4 text-muted-foreground">
                         <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                         <span>9894700898</span>
-                    </div>
-                    <div className="flex items-start gap-4 text-muted-foreground">
-                        <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <span>contact@tsmmjeweller.com</span>
                     </div>
                 </CardContent>
             </Card>
