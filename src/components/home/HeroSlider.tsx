@@ -6,21 +6,21 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const heroSlides = [
   {
-    image: 'https://placehold.co/1600x800',
+    image: 'https://www.sbicard.com/sbi-card-en/assets/docs/html/personal/offers/AkshayaTritiya-22/img/d-dhanteras-ms.jpg',
     title: 'Timeless Elegance',
     subtitle: 'Discover our new collection of diamond rings.',
     link: '/products?category=rings',
     hint: 'diamond ring'
   },
   {
-    image: 'https://placehold.co/1600x800',
+    image: 'https://cdn.youlry.com/media/wysiwyg/new_third_banner.webp',
     title: 'Celestial Dreams',
     subtitle: 'Shop exquisite necklaces that tell a story.',
     link: '/products?category=necklaces',
     hint: 'gold necklace'
   },
   {
-    image: 'https://placehold.co/1600x800',
+    image: 'https://milanjewellery.com/uploads/slider/original/bracelet-3-81659.jpg',
     title: 'The Art of Brilliance',
     subtitle: 'Handcrafted bracelets for a touch of luxury.',
     link: '/products?category=bracelets',
