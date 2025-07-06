@@ -41,7 +41,7 @@ const SignUpPage = () => {
                 <Gem className="h-12 w-12 text-primary"/>
             </div>
           <CardTitle className="text-3xl font-headline">Create an Account</CardTitle>
-          <CardDescription>Join Aurum to start your journey with fine jewelry.</CardDescription>
+          <CardDescription>Join TSMM jeweller to start your journey with fine jewelry.</CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>

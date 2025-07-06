@@ -88,14 +88,14 @@ const ContactPage = () => {
                     </div>
                     <div className="flex items-start gap-4 text-muted-foreground">
                         <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <span>contact@aurum.com</span>
+                        <span>contact@tsmmjeweller.com</span>
                     </div>
                 </CardContent>
             </Card>
             <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
                     src="https://placehold.co/800x450"
-                    alt="Map to Aurum showroom"
+                    alt="Map to TSMM jeweller showroom"
                     fill
                     className="object-cover"
                     data-ai-hint="city map"

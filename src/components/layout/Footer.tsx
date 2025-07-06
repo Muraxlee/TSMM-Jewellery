@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-4">
             <Link href="/" className="flex items-center gap-2">
               <Gem className="h-6 w-6 text-primary" />
-              <span className="font-bold font-headline text-xl">Aurum</span>
+              <span className="font-bold font-headline text-xl">TSMM jeweller</span>
             </Link>
             <p className="text-sm text-muted-foreground">Exquisite jewelry for every occasion.</p>
           </div>
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Aurum. All Rights Reserved.
+          © {new Date().getFullYear()} TSMM jeweller. All Rights Reserved.
         </div>
       </div>
     </footer>

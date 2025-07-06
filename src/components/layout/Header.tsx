@@ -34,7 +34,7 @@ const Header = () => {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Gem className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-xl">Aurum</span>
+          <span className="font-bold font-headline text-xl">TSMM jeweller</span>
         </Link>
         
         <nav className="hidden md:flex gap-6">

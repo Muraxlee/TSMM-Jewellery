@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <div className="container py-12 md:py-24">
       <div className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold font-headline">About Aurum</h1>
+        <h1 className="text-4xl md:text-5xl font-bold font-headline">About TSMM jeweller</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
           Discover the story behind our passion for crafting exquisite jewelry that tells a story of elegance, tradition, and timeless beauty.
         </p>
@@ -16,7 +16,7 @@ const AboutPage = () => {
         <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
           <Image
             src="https://placehold.co/800x800"
-            alt="Aurum workshop"
+            alt="TSMM jeweller workshop"
             fill
             className="object-cover"
             data-ai-hint="jewelry workshop"
@@ -25,7 +25,7 @@ const AboutPage = () => {
         <div className="space-y-6">
           <h2 className="text-3xl font-bold font-headline">Our Legacy of Craftsmanship</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Founded on the principles of quality, artistry, and integrity, Aurum has been a beacon of fine jewelry since its inception. Our journey began with a simple vision: to create pieces that are not just accessories, but heirlooms to be cherished for generations.
+            Founded on the principles of quality, artistry, and integrity, TSMM jeweller has been a beacon of fine jewelry since its inception. Our journey began with a simple vision: to create pieces that are not just accessories, but heirlooms to be cherished for generations.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             Each piece in our collection is meticulously crafted by master artisans who share a passion for perfection. We source only the finest materials, from ethically-sourced diamonds to lustrous pearls and precious metals, ensuring that every creation meets our exacting standards of beauty and quality.

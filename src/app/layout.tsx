@@ -8,7 +8,7 @@ import { CartProvider } from "@/contexts/CartContext";
 import { AuthProvider } from "@/contexts/AuthContext";
 
 export const metadata: Metadata = {
-  title: "Aurum Ecommerce",
+  title: "TSMM jeweller Ecommerce",
   description: "A modern, responsive, and feature-rich e-commerce website for a jewelry shop.",
 };
 
