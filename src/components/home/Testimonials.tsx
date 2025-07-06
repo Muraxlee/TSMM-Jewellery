@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import { testimonials } from '@/lib/data';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const Testimonials = () => {
   return (
@@ -24,14 +24,11 @@ const Testimonials = () => {
                 <div className="p-4">
                   <Card>
                     <CardContent className="flex flex-col items-center text-center p-8 gap-4">
-                        <Image
-                            src={testimonial.avatar}
-                            alt={testimonial.name}
-                            width={80}
-                            height={80}
-                            className="rounded-full"
-                            data-ai-hint="person face"
-                        />
+                        <Avatar className="h-20 w-20">
+                            <AvatarFallback className="text-2xl bg-primary/20 text-primary font-bold">
+                                {testimonial.name.charAt(0)}
+                            </AvatarFallback>
+                        </Avatar>
                         <p className="text-muted-foreground italic font-body">"{testimonial.quote}"</p>
                         <h3 className="font-semibold font-headline">{testimonial.name}</h3>
                     </CardContent>
