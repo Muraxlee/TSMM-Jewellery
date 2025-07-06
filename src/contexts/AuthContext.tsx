@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 interface AuthContextType {
   user: User | null;
   isAuthenticated: boolean;
-  login: (email: string) => void;
+  login: (email: string, name?: string) => void;
   logout: () => void;
 }
 
@@ -26,14 +26,14 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     }
   }, []);
 
-  const login = (email: string) => {
+  const login = (email: string, name?: string) => {
     // This is a mock login. In a real app, you'd validate credentials.
-    const mockUser: User = { name: 'Demo User', email };
+    const mockUser: User = { name: name || 'Demo User', email };
     setUser(mockUser);
     localStorage.setItem('user', JSON.stringify(mockUser));
     toast({
       title: "Logged In",
-      description: `Welcome back, ${mockUser.name}!`,
+      description: `Welcome, ${mockUser.name}!`,
     });
     router.push('/');
   };

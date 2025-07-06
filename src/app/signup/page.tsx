@@ -12,24 +12,25 @@ import Link from "next/link";
 import { Gem } from "lucide-react";
 
 const formSchema = z.object({
-  email: z.string().email("Invalid email address."),
-  password: z.string().min(6, "Password must be at least 6 characters."),
+  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  email: z.string().email({ message: "Invalid email address." }),
+  password: z.string().min(6, { message: "Password must be at least 6 characters." }),
 });
 
-const LoginPage = () => {
+const SignUpPage = () => {
   const { login } = useAuth();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      name: "",
       email: "",
       password: "",
     },
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real app, you'd send this to a server.
-    // For this demo, we'll just use the email for the mock login.
-    login(values.email);
+    // For this demo, we'll just use the email and name for the mock login.
+    login(values.email, values.name);
   }
 
   return (
@@ -39,12 +40,25 @@ const LoginPage = () => {
             <div className="mx-auto mb-4">
                 <Gem className="h-12 w-12 text-primary"/>
             </div>
-          <CardTitle className="text-3xl font-headline">Welcome Back</CardTitle>
-          <CardDescription>Enter your credentials to access your account.</CardDescription>
+          <CardTitle className="text-3xl font-headline">Create an Account</CardTitle>
+          <CardDescription>Join Aurum to start your journey with fine jewelry.</CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Your Name" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="email"
@@ -72,14 +86,14 @@ const LoginPage = () => {
                 )}
               />
               <Button type="submit" size="lg" className="w-full">
-                Login
+                Create Account
               </Button>
             </form>
           </Form>
           <div className="mt-4 text-center text-sm">
-            Don't have an account?{" "}
-            <Link href="/signup" className="underline">
-              Sign up
+            Already have an account?{" "}
+            <Link href="/login" className="underline">
+              Log in
             </Link>
           </div>
         </CardContent>
@@ -88,4 +102,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignUpPage;
