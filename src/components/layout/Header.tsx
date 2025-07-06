@@ -34,7 +34,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Image src="/logo.jpg" alt="TSMM jeweller Logo" width={130} height={40} className="object-contain" />
+          <Image src="/logo.jpg" alt="TSMM jeweller Logo" width={50} height={50} className="object-contain" />
         </Link>
         
         <nav className="hidden md:flex gap-6">

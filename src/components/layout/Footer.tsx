@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex flex-col items-start gap-4">
             <Link href="/" className="flex items-center">
-              <Image src="/logo.jpg" alt="TSMM jeweller Logo" width={130} height={40} className="object-contain" />
+              <Image src="/logo.jpg" alt="TSMM jeweller Logo" width={80} height={80} className="object-contain" />
             </Link>
             <p className="text-sm text-muted-foreground">Exquisite jewelry for every occasion.</p>
           </div>
