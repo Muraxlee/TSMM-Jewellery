@@ -32,3 +32,8 @@ export type CartItem = {
   image: string;
   quantity: number;
 };
+
+export type User = {
+  name: string;
+  email: string;
+};
