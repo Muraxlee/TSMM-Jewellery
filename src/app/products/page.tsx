@@ -1,11 +1,10 @@
 "use client"
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { products } from "@/lib/data";
 import type { Product } from "@/lib/types";
 import ProductGrid from "@/components/products/ProductGrid";
 import ProductFilters from "@/components/products/ProductFilters";
-import JewelryRecommender from "@/components/ai/JewelryRecommender";
 
 export default function ProductsPage() {
   const [filters, setFilters] = useState({
@@ -14,11 +13,6 @@ export default function ProductsPage() {
     price: [0, 5000] as [number, number],
   });
   const [sort, setSort] = useState("latest");
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const filteredAndSortedProducts = useMemo(() => {
     let filtered = products.filter((product) => {
@@ -63,12 +57,6 @@ export default function ProductsPage() {
           <ProductGrid products={filteredAndSortedProducts} />
         </div>
       </div>
-      
-      {isClient && (
-        <div className="mt-24">
-          <JewelryRecommender currentProducts={filteredAndSortedProducts} />
-        </div>
-      )}
     </div>
   );
 }
