@@ -6,18 +6,18 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const heroSlides = [
   {
+    image: 'https://t4.ftcdn.net/jpg/05/27/71/81/360_F_527718147_x7XDK929xZnZqjgh0oPYz7xK0EvtnlIF.jpg',
+    title: 'TSMM Jewellery',
+    subtitle: 'Shop exquisite necklaces that tell a story.',
+    link: '/products?category=necklaces',
+    hint: 'gold necklace'
+  },
+  {
     image: 'https://lsmedia.linker-cdn.net/993339/2024/13403708.jpeg',
     title: 'Timeless Elegance',
     subtitle: 'Discover our new collection of diamond rings.',
     link: '/products?category=rings',
     hint: 'diamond ring'
-  },
-  {
-    image: 'https://t4.ftcdn.net/jpg/05/27/71/81/360_F_527718147_x7XDK929xZnZqjgh0oPYz7xK0EvtnlIF.jpg',
-    title: 'Celestial Dreams',
-    subtitle: 'Shop exquisite necklaces that tell a story.',
-    link: '/products?category=necklaces',
-    hint: 'gold necklace'
   },
   {
     image: 'https://t3.ftcdn.net/jpg/04/86/76/98/360_F_486769878_2Pg9jUn3OjKI7su9E1RrU7rhLATRKj21.jpg',
