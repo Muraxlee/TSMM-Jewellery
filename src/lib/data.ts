@@ -1,0 +1,132 @@
+import type { Product, Category, Testimonial } from './types';
+
+export const categories: Category[] = [
+  { id: 'rings', name: 'Rings', image: 'https://placehold.co/400x400' },
+  { id: 'necklaces', name: 'Necklaces', image: 'https://placehold.co/400x400' },
+  { id: 'earrings', name: 'Earrings', image: 'https://placehold.co/400x400' },
+  { id: 'bracelets', name: 'Bracelets', image: 'https://placehold.co/400x400' },
+];
+
+export const products: Product[] = [
+  {
+    id: '1',
+    slug: 'solitaire-bliss-diamond-ring',
+    name: 'Solitaire Bliss Diamond Ring',
+    description: 'An exquisitely crafted solitaire diamond ring, representing a timeless bond of love and commitment. Perfect for engagements and special occasions.',
+    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    price: 1250.00,
+    category: 'rings',
+    material: 'gold',
+    rating: 4.9,
+    reviewCount: 150,
+    isFeatured: true,
+  },
+  {
+    id: '2',
+    slug: 'emerald-cut-eternity-band',
+    name: 'Emerald-Cut Eternity Band',
+    description: 'A stunning eternity band featuring brilliant emerald-cut diamonds set in a continuous circle. Symbolizes endless love and sophistication.',
+    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    price: 2400.00,
+    category: 'rings',
+    material: 'platinum',
+    rating: 5.0,
+    reviewCount: 85,
+  },
+  {
+    id: '3',
+    slug: 'celestial-pendant-necklace',
+    name: 'Celestial Pendant Necklace',
+    description: 'A delicate gold necklace with a celestial-inspired pendant, adorned with miniature diamonds. A piece of the starry night to wear.',
+    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    price: 890.00,
+    category: 'necklaces',
+    material: 'gold',
+    rating: 4.8,
+    reviewCount: 210,
+    isFeatured: true,
+  },
+  {
+    id: '4',
+    slug: 'sapphire-drop-earrings',
+    name: 'Sapphire Drop Earrings',
+    description: 'Elegant drop earrings featuring deep blue sapphires surrounded by a halo of sparkling diamonds. Perfect for adding a touch of glamour.',
+    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    price: 1800.00,
+    category: 'earrings',
+    material: 'white-gold',
+    rating: 4.9,
+    reviewCount: 120,
+    isFeatured: true,
+  },
+  {
+    id: '5',
+    slug: 'classic-tennis-bracelet',
+    name: 'Classic Tennis Bracelet',
+    description: 'A timeless tennis bracelet featuring a single row of round-cut diamonds. A staple piece for any jewelry collection, exuding elegance and grace.',
+    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    price: 3500.00,
+    category: 'bracelets',
+    material: 'platinum',
+    rating: 4.9,
+    reviewCount: 95,
+  },
+  {
+    id: '6',
+    slug: 'pearl-strand-necklace',
+    name: 'Pearl Strand Necklace',
+    description: 'A classic single strand of lustrous Akoya pearls, hand-knotted on a silk thread. The epitome of classic style and grace.',
+    images: ['https://placehold.co/600x600'],
+    price: 950.00,
+    category: 'necklaces',
+    material: 'pearl',
+    rating: 4.8,
+    reviewCount: 180,
+  },
+  {
+    id: '7',
+    slug: 'diamond-stud-earrings',
+    name: 'Diamond Stud Earrings',
+    description: 'Brilliant round-cut diamond stud earrings, a must-have for every woman. Versatile and timeless, they add a sparkle to any outfit.',
+    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    price: 750.00,
+    category: 'earrings',
+    material: 'gold',
+    rating: 5.0,
+    reviewCount: 300,
+    isFeatured: true,
+  },
+  {
+    id: '8',
+    slug: 'rose-gold-bangle',
+    name: 'Rose Gold Bangle',
+    description: 'A sleek and modern bangle crafted from 18k rose gold. Can be worn alone for a minimalist look or stacked with other bracelets.',
+    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    price: 600.00,
+    category: 'bracelets',
+    material: 'gold',
+    rating: 4.7,
+    reviewCount: 110,
+  },
+];
+
+export const testimonials: Testimonial[] = [
+    {
+        id: '1',
+        name: 'Eleanor Vance',
+        quote: 'The ring I purchased from Aurum is breathtaking. The craftsmanship is exquisite, and it truly feels like a piece of art. The customer service was just as exceptional.',
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '2',
+        name: 'James Peterson',
+        quote: 'I bought a necklace for my wife\'s anniversary, and she was overjoyed. The quality and design are unparalleled. Aurum has become my go-to for special gifts.',
+        avatar: 'https://placehold.co/100x100'
+    },
+    {
+        id: '3',
+        name: 'Sophia Loren',
+        quote: 'Shopping at Aurum was a delightful experience. Their collection is curated with such elegance and taste. The earrings I chose are my new favorites!',
+        avatar: 'https://placehold.co/100x100'
+    }
+];
