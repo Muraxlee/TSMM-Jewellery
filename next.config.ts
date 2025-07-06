@@ -40,6 +40,24 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'lsmedia.linker-cdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 't4.ftcdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 't3.ftcdn.net',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

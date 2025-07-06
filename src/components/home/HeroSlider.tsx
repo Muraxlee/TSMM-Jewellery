@@ -6,21 +6,21 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const heroSlides = [
   {
-    image: 'https://www.sbicard.com/sbi-card-en/assets/docs/html/personal/offers/AkshayaTritiya-22/img/d-dhanteras-ms.jpg',
+    image: 'https://lsmedia.linker-cdn.net/993339/2024/13403708.jpeg',
     title: 'Timeless Elegance',
     subtitle: 'Discover our new collection of diamond rings.',
     link: '/products?category=rings',
     hint: 'diamond ring'
   },
   {
-    image: 'https://cdn.youlry.com/media/wysiwyg/new_third_banner.webp',
+    image: 'https://t4.ftcdn.net/jpg/05/27/71/81/360_F_527718147_x7XDK929xZnZqjgh0oPYz7xK0EvtnlIF.jpg',
     title: 'Celestial Dreams',
     subtitle: 'Shop exquisite necklaces that tell a story.',
     link: '/products?category=necklaces',
     hint: 'gold necklace'
   },
   {
-    image: 'https://milanjewellery.com/uploads/slider/original/bracelet-3-81659.jpg',
+    image: 'https://t3.ftcdn.net/jpg/04/86/76/98/360_F_486769878_2Pg9jUn3OjKI7su9E1RrU7rhLATRKj21.jpg',
     title: 'The Art of Brilliance',
     subtitle: 'Handcrafted bracelets for a touch of luxury.',
     link: '/products?category=bracelets',
