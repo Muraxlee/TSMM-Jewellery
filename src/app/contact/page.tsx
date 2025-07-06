@@ -9,7 +9,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const formSchema = z.object({
@@ -80,11 +79,11 @@ const ContactPage = () => {
                     <h3 className="text-xl font-headline font-semibold">Our Showroom</h3>
                     <div className="flex items-start gap-4 text-muted-foreground">
                         <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <span>123 Elegance Avenue, Diamond District, New York, NY 10017</span>
+                        <span>No: HIG-510, Mullai St, near New Bus Stand Road, New Housing Unit, Thanjavur, Tamil Nadu 613005</span>
                     </div>
                     <div className="flex items-start gap-4 text-muted-foreground">
                         <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                        <span>(212) 555-0123</span>
+                        <span>9894700898</span>
                     </div>
                     <div className="flex items-start gap-4 text-muted-foreground">
                         <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
@@ -93,13 +92,14 @@ const ContactPage = () => {
                 </CardContent>
             </Card>
             <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-                <Image
-                    src="https://placehold.co/800x450"
-                    alt="Map to TSMM jeweller showroom"
-                    fill
-                    className="object-cover"
-                    data-ai-hint="city map"
-                />
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617368.6319067937!2d78.50566158906251!3d10.749827399999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab8d1588a6cf9%3A0xdcd0ccac5ff72839!2sTSMM%20SILVER%20JEWELLERY!5e1!3m2!1sen!2sin!4v1751809709791!5m2!1sen!2sin"
+                    className="absolute inset-0 w-full h-full"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
       </div>

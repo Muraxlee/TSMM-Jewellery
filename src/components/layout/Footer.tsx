@@ -41,7 +41,7 @@ const Footer = () => {
                 <a href="#"><Facebook className="h-5 w-5 text-muted-foreground" /></a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="#"><Instagram className="h-5 w-5 text-muted-foreground" /></a>
+                <a href="https://www.instagram.com/tsmm_silverjewellery/" target="_blank" rel="noopener noreferrer"><Instagram className="h-5 w-5 text-muted-foreground" /></a>
               </Button>
             </div>
           </div>
