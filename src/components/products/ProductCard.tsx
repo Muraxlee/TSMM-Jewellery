@@ -46,7 +46,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </div>
           <div className="p-4 text-center">
             <h3 className="font-headline text-lg font-semibold truncate">{product.name}</h3>
-            <p className="text-muted-foreground font-body mt-1">${product.price.toFixed(2)}</p>
+            <p className="text-muted-foreground font-body mt-1">Rs{product.price.toFixed(2)}</p>
           </div>
         </CardContent>
       </Card>

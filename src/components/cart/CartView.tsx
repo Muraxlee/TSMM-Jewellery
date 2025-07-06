@@ -34,7 +34,7 @@ const CartView = () => {
             </div>
             <div className="ml-4 flex-grow">
               <h3 className="font-semibold font-headline">{item.name}</h3>
-              <p className="text-sm text-muted-foreground">${item.price.toFixed(2)}</p>
+              <p className="text-sm text-muted-foreground">Rs{item.price.toFixed(2)}</p>
             </div>
             <div className="flex items-center gap-4">
               <Input
@@ -44,7 +44,7 @@ const CartView = () => {
                 onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
                 className="w-16 h-10 text-center"
               />
-              <p className="w-20 text-right font-semibold">${(item.price * item.quantity).toFixed(2)}</p>
+              <p className="w-20 text-right font-semibold">Rs{(item.price * item.quantity).toFixed(2)}</p>
               <Button variant="ghost" size="icon" onClick={() => removeFromCart(item.id)}>
                 <Trash2 className="h-5 w-5 text-muted-foreground" />
               </Button>
@@ -60,7 +60,7 @@ const CartView = () => {
           <CardContent className="space-y-4">
             <div className="flex justify-between">
               <span>Subtotal</span>
-              <span>${cartTotal.toFixed(2)}</span>
+              <span>Rs{cartTotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span>Shipping</span>
@@ -69,7 +69,7 @@ const CartView = () => {
             <Separator />
             <div className="flex justify-between font-bold text-lg">
               <span>Total</span>
-              <span>${cartTotal.toFixed(2)}</span>
+              <span>Rs{cartTotal.toFixed(2)}</span>
             </div>
           </CardContent>
           <CardFooter>

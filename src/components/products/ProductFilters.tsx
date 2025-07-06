@@ -109,8 +109,8 @@ const ProductFilters = ({ filters, setFilters, sort, setSort }: ProductFiltersPr
                         onValueChange={handlePriceChange}
                     />
                     <div className="flex justify-between text-sm text-muted-foreground mt-2">
-                        <span>${filters.price[0]}</span>
-                        <span>${filters.price[1]}</span>
+                        <span>Rs{filters.price[0]}</span>
+                        <span>Rs{filters.price[1]}</span>
                     </div>
                 </div>
             </CardContent>

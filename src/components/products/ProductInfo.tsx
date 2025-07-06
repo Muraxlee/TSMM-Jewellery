@@ -25,7 +25,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     <div className="space-y-6">
       <h1 className="text-3xl md:text-4xl font-bold font-headline">{product.name}</h1>
       <div className="flex items-center gap-4">
-        <p className="text-3xl text-primary font-bold font-body">${product.price.toFixed(2)}</p>
+        <p className="text-3xl text-primary font-bold font-body">Rs{product.price.toFixed(2)}</p>
         <div className="flex items-center gap-1">
           {[...Array(5)].map((_, i) => (
             <Star key={i} className={`h-5 w-5 ${i < Math.round(product.rating) ? 'text-primary fill-primary' : 'text-muted-foreground'}`} />

@@ -24,10 +24,10 @@ const OrderSummary = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold">{item.name}</h4>
-                                    <p className="text-sm text-muted-foreground">Price: ${item.price.toFixed(2)}</p>
+                                    <p className="text-sm text-muted-foreground">Price: Rs{item.price.toFixed(2)}</p>
                                 </div>
                             </div>
-                            <p className="font-semibold">${(item.price * item.quantity).toFixed(2)}</p>
+                            <p className="font-semibold">Rs{(item.price * item.quantity).toFixed(2)}</p>
                         </div>
                     ))}
                 </div>
@@ -35,7 +35,7 @@ const OrderSummary = () => {
                 <div className="space-y-2">
                     <div className="flex justify-between text-muted-foreground">
                         <span>Subtotal</span>
-                        <span>${cartTotal.toFixed(2)}</span>
+                        <span>Rs{cartTotal.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between text-muted-foreground">
                         <span>Shipping</span>
@@ -44,7 +44,7 @@ const OrderSummary = () => {
                     <Separator className="my-2" />
                     <div className="flex justify-between font-bold text-xl">
                         <span>Total</span>
-                        <span>${cartTotal.toFixed(2)}</span>
+                        <span>Rs{cartTotal.toFixed(2)}</span>
                     </div>
                 </div>
             </CardContent>
