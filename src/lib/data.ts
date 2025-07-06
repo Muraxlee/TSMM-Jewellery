@@ -1,10 +1,10 @@
 import type { Product, Category, Testimonial } from './types';
 
 export const categories: Category[] = [
-  { id: 'rings', name: 'Rings', image: 'https://placehold.co/400x400' },
-  { id: 'necklaces', name: 'Necklaces', image: 'https://placehold.co/400x400' },
-  { id: 'earrings', name: 'Earrings', image: 'https://placehold.co/400x400' },
-  { id: 'bracelets', name: 'Bracelets', image: 'https://placehold.co/400x400' },
+  { id: 'rings', name: 'Rings', image: 'https://lh3.googleusercontent.com/p/AF1QipNRDQR_JU8jWIrfDFY3uYsTyxuuhLEQtFIse8Qm=s680-w680-h510-rw' },
+  { id: 'necklaces', name: 'Necklaces', image: 'https://lh3.googleusercontent.com/p/AF1QipMAUa5Wyphzr7oRVouc2LO_cM9Ux772X6Oin9Ya=s680-w680-h510-rw' },
+  { id: 'earrings', name: 'Earrings', image: 'https://lh3.googleusercontent.com/p/AF1QipM2Ur8PoqVUYFtw44Ze3VUVfLegoKPERJlkFz4v=s680-w680-h510-rw' },
+  { id: 'bracelets', name: 'Bracelets', image: 'https://lh3.googleusercontent.com/p/AF1QipMWgra0ufxD4EFlyd3uZQD2NK-yLUnhOPa0pVhW=s680-w680-h510-rw' },
 ];
 
 export const products: Product[] = [
@@ -13,7 +13,7 @@ export const products: Product[] = [
     slug: 'solitaire-bliss-diamond-ring',
     name: 'Solitaire Bliss Diamond Ring',
     description: 'An exquisitely crafted solitaire diamond ring, representing a timeless bond of love and commitment. Perfect for engagements and special occasions.',
-    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    images: ['https://lh3.googleusercontent.com/p/AF1QipNRDQR_JU8jWIrfDFY3uYsTyxuuhLEQtFIse8Qm=s680-w680-h510-rw'],
     price: 1250.00,
     category: 'rings',
     material: 'gold',
@@ -26,7 +26,7 @@ export const products: Product[] = [
     slug: 'emerald-cut-eternity-band',
     name: 'Emerald-Cut Eternity Band',
     description: 'A stunning eternity band featuring brilliant emerald-cut diamonds set in a continuous circle. Symbolizes endless love and sophistication.',
-    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    images: ['https://lh3.googleusercontent.com/p/AF1QipMAUa5Wyphzr7oRVouc2LO_cM9Ux772X6Oin9Ya=s680-w680-h510-rw'],
     price: 2400.00,
     category: 'rings',
     material: 'platinum',
@@ -38,7 +38,7 @@ export const products: Product[] = [
     slug: 'celestial-pendant-necklace',
     name: 'Celestial Pendant Necklace',
     description: 'A delicate gold necklace with a celestial-inspired pendant, adorned with miniature diamonds. A piece of the starry night to wear.',
-    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    images: ['https://lh3.googleusercontent.com/p/AF1QipM2Ur8PoqVUYFtw44Ze3VUVfLegoKPERJlkFz4v=s680-w680-h510-rw'],
     price: 890.00,
     category: 'necklaces',
     material: 'gold',
@@ -51,7 +51,7 @@ export const products: Product[] = [
     slug: 'sapphire-drop-earrings',
     name: 'Sapphire Drop Earrings',
     description: 'Elegant drop earrings featuring deep blue sapphires surrounded by a halo of sparkling diamonds. Perfect for adding a touch of glamour.',
-    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    images: ['https://lh3.googleusercontent.com/p/AF1QipMWgra0ufxD4EFlyd3uZQD2NK-yLUnhOPa0pVhW=s680-w680-h510-rw'],
     price: 1800.00,
     category: 'earrings',
     material: 'white-gold',
@@ -64,7 +64,7 @@ export const products: Product[] = [
     slug: 'classic-tennis-bracelet',
     name: 'Classic Tennis Bracelet',
     description: 'A timeless tennis bracelet featuring a single row of round-cut diamonds. A staple piece for any jewelry collection, exuding elegance and grace.',
-    images: ['https://placehold.co/600x600', 'https://placehold.co/600x600'],
+    images: ['https://lh3.googleusercontent.com/p/AF1QipPUlY37hFnvkipYAQuRA7MMGHwPqJPL-2z9VXGp=s680-w680-h510-rw'],
     price: 3500.00,
     category: 'bracelets',
     material: 'platinum',
@@ -76,7 +76,7 @@ export const products: Product[] = [
     slug: 'pearl-strand-necklace',
     name: 'Pearl Strand Necklace',
     description: 'A classic single strand of lustrous Akoya pearls, hand-knotted on a silk thread. The epitome of classic style and grace.',
-    images: ['https://placehold.co/600x600'],
+    images: ['https://lh3.googleusercontent.com/p/AF1QipNwINo1guCCgk4RWH64X054TqUpevCvqcDYSbuA=s680-w680-h510-rw'],
     price: 950.00,
     category: 'necklaces',
     material: 'pearl',
